@@ -56,8 +56,9 @@ class LoginViewController: UIViewController {
             guard let strongSelf = self else {return}
             if let err = err {
                 print(err.localizedDescription)
+            } else {
+                self!.checkUserInfo()
             }
-            self!.checkUserInfo()
         }
     }
     
